@@ -10,7 +10,6 @@ let acceptingAnswers = true
 let score = 60
 let questionCounter = 0
 let availableQuestions = []
-// let timerObject
 
 let questions = [
     {
@@ -62,7 +61,10 @@ startGame = () => {
     getNewQuestion()
 }
 
-
+//built into this function is the score keeping
+//the timer will count down every second
+//if the timer reaches zero(or below 0) the score will reset to 0 and the game will end by going to the next page
+//capturing the score at the time the game ends
 function timerIncrement() {
     scoreText.textContent = score
     score--
@@ -80,6 +82,8 @@ function timerIncrement() {
     }
 }
 
+//basic function that runs within the start game function
+//will run the timerIncrement function (which actually decrements the function) every second
 function startTimer(){
 timer = setInterval(timerIncrement, 1000)
 }
@@ -98,7 +102,9 @@ function move() {
     }
   }
 
-
+//function runs after a getTimeout function after the question is answered
+//first the funtion will check how many questions are left
+//then it will erase the old answers and questions from the DOM and replace it with the next ones
 getNewQuestion = () => {
     //when there are no more questions available
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
@@ -150,11 +156,6 @@ choices.forEach(choice => {
         }, 1000)
     })
 })
-
-// incrementScore = num => {
-//     score +=num
-//     scoreText.innerText = score
-// }
 
 startGame()
 

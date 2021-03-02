@@ -23,6 +23,12 @@ Many thanks to the below individuals who provided input, suggestions, or played 
 * Mim Armand
 * Kat Poulos
 
+Sources used for significant help:
+I used one blog post and two youtube videos for significant help in the process
+
+* [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k)
+* [Brian Design](https://www.youtube.com/watch?v=f4fB9Xg2JEY)
+* [SitePoint - Build a Javascript Quiz](https://www.sitepoint.com/simple-javascript-quiz/)
 
 If any additional issues are found, or if there are any suggestions for improvement, please send an email to site developer Jay Yousef at jay.yousef@gmail.com
 
