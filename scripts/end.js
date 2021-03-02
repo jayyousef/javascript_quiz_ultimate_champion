@@ -16,6 +16,10 @@ username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value
 })
 
+saveScoreBtn.addEventListener('click', () => {
+    window.location.assign('end.html')
+})
+
 //using the object in the localStorage to display the users previous name and high scores
 saveHighScore = e => {
     e.preventDefault()
@@ -34,7 +38,7 @@ saveHighScore = e => {
     highScores.splice(5)
 
     localStorage.setItem('highScores', JSON.stringify(highScores))
-    window.location.assign('../index.html')
+    window.location.assign('index.html')
 
     
 }
