@@ -60,4 +60,4 @@ These updates are covered under [GNU General Public License v3.0](./assets/GNU_P
 
 ## Screenshot below:
 
-<img src="./assets/quiz-game-screenshot.png>
+![Quiz Screenshot](./assets/quiz-game-screenshot.png)
